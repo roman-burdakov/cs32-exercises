@@ -1,0 +1,7 @@
+<div ng-if="post">
+  <strong ng-transclude></strong><br>
+  <tt>by {{ post.userName }}</tt>
+  <div ng-if="body">
+    {{ post.body }}
+  </div>
+</div>

@@ -1,0 +1,9 @@
+li {
+    width: 90%;
+    height: 35px;
+    border: dashed 1px black;
+    border-radius: 5px;
+}
+li button {
+    float: right;
+}

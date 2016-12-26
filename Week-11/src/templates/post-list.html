@@ -1,0 +1,8 @@
+<h2>Post List Directive</h2>
+<ul>
+  <li ng-repeat="(index, post) in lc.posts.data" ng-class="{'active-post':lc.posts.isActive(post.id)}">
+    <a class="unlink" ng-click="lc.display(post)">
+      <post-display post="post">{{ post.title }}</post-display>
+    </a>
+  </li>
+</ul>

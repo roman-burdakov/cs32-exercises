@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="vendors.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body ng-app="fizzbuzzer" ng-cloak>
+    <h1>Hello Fizzbuzzer</h1>
+    <div id="div1" class="well row" ng-init='buzzer = 0' ng-controller="MyController">
+      <button id="plus-btn" class="btn" ng-click="buzzer = buzzer + 1">+</button>
+      <button id="minus-btn" class="btn" ng-click="buzzer = buzzer - 1">-</button>
+      {{ buzzer }} <span ng-show="buzzer % 3 === 0 && buzzer > 0">Fizz</span>
+      <span ng-hide="buzzer % 5 != 0 || buzzer == 0">Buzz</span>
+      <span ng-if="buzzer > 10" ng-class="{hide:buzzer > 20}">Block Of text</span>
+    </div>
+<!--     <div ng-init="letters = ['a', 'b', 'c']">
+      <ul class="list-unstyled">
+        <li ng-repeat="letter in letters">{{letter}}</li>
+      </ul>
+    </div> -->
+    <div ng-init="names = [{fname: 'jazahn', lname: 'clevenger'}, {fname: 'roman', lname: 'burdakov'}]">
+      Buzzer: {{ buzzer }}
+      <table class="table">
+      <caption>People in the class</caption>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Index</th>
+          <th>Actions</th>
+        </tr>
+        <tr ng-repeat="(index, person) in names">
+          <td>{{person.fname}}</td>
+          <td>{{person.lname}}</td>
+          <td>{{$index}}</td>
+          <td><button class='btn' ng-click="alert($index)">Do something</button></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

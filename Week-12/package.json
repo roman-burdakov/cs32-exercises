@@ -1,0 +1,20 @@
+{
+  "name": "week-12",
+  "version": "1.0.0",
+  "description": "*where \"stuff\" is probably best described as \"streams\"* *yes, I could have just said \"streams\", but it's too late now*",
+  "main": "read.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CSCI-E32/Week-12.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CSCI-E32/Week-12/issues"
+  },
+  "homepage": "https://github.com/CSCI-E32/Week-12#readme"
+}

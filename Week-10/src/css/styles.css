@@ -1,0 +1,8 @@
+a.unlink {
+  color: inherit;
+}
+a.unlink:hover {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}

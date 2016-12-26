@@ -1,0 +1,26 @@
+{
+  "name": "logintrest",
+  "version": "0.0.0",
+  "homepage": "https://github.com/CSCI-E32/Week-8",
+  "authors": [
+    "JaZahn <jcleveng@fas.harvard.edu>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4",
+    "angular": "~1.4.7",
+    "angular-mocks": "~1.4.7"
+  }
+}

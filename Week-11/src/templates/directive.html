@@ -1,0 +1,12 @@
+<div class="row">
+
+  <post-list class="well col-md-4"></post-list>
+
+  <div class="col-md-4" ng-controller="DisplayController as dc">
+    <div class="well display">
+      <h2>DisplayController</h2>
+      <post-display post="dc.posts.current" body="true">{{ dc.posts.current.title }}</post-display>
+    </div>
+  </div>
+
+</div>

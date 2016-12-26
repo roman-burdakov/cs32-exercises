@@ -1,0 +1,2 @@
+one();
+console.log(two());
